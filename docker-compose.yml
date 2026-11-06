@@ -1,0 +1,27 @@
+services:
+  dashboard:
+    build: .
+    ports:
+      - '8501:8501'
+    volumes:
+      - current_data:/app/data/current
+    environment:
+      HFA_DATABASE_URL: sqlite:////app/data/current/hfa_tracker.db
+      HFA_ADMIN_PASSWORD: ${HFA_ADMIN_PASSWORD:-}
+      HFA_CURRENT_FPL_YEAR: ${HFA_CURRENT_FPL_YEAR:-2026}
+      HFA_USER_AGENT: ${HFA_USER_AGENT:-HFAPTracker/0.1 (public-interest research)}
+    restart: unless-stopped
+  worker:
+    build: .
+    depends_on:
+      - dashboard
+    command: sh -c 'python -m src.scheduler'
+    volumes:
+      - current_data:/app/data/current
+    environment:
+      HFA_DATABASE_URL: sqlite:////app/data/current/hfa_tracker.db
+      HFA_CURRENT_FPL_YEAR: ${HFA_CURRENT_FPL_YEAR:-2026}
+      HFA_USER_AGENT: ${HFA_USER_AGENT:-HFAPTracker/0.1 (public-interest research)}
+    restart: unless-stopped
+volumes:
+  current_data:

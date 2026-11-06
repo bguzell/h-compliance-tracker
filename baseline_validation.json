@@ -1,0 +1,116 @@
+{
+  "facilities": 212,
+  "baseline_grades": {
+    "B": 116,
+    "D": 10,
+    "F": 41,
+    "C": 31,
+    "A": 14
+  },
+  "historical_grade_mismatches": [],
+  "pdf_automatic_fail_discrepancies": [
+    {
+      "id": "0501000-0085",
+      "name": "Auburn Community Hospital",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "5401001-0977",
+      "name": "Cayuga Medical Center at Ithaca",
+      "original": "C",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "7002053-9753",
+      "name": "NYU Langone Hospital - Joseph S. and Diane H. Steinberg Ambulatory Care Center",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "7002053-1304",
+      "name": "NYU Langone Hospital-Brooklyn",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "7002053-0511",
+      "name": "NYU Langone Hospital-Long Island",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "7002053-1463",
+      "name": "NYU Langone Hospitals",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "7002053-1446",
+      "name": "NYU Langone Orthopedic Hospital",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "5123000-885",
+      "name": "NYU Langone Hospital - Suffolk (formerly Long Island Community Hospital)",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "1401010-0216",
+      "name": "Roswell Park Cancer Institute",
+      "original": "C",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "2201000-0367",
+      "name": "Samaritan Medical Center",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "4823700-0858",
+      "name": "Schuyler Hospital",
+      "original": "C",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "5151001-0891",
+      "name": "Stony Brook Eastern Long Island Hospital",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "5151001-0889",
+      "name": "Stony Brook Southampton Hospital",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "5151001-0245",
+      "name": "Stony Brook University Hospital",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "7001037-1320",
+      "name": "University Hospital of Brooklyn (University Hospital at Downstate)",
+      "original": "D",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "3301007-0635",
+      "name": "Upstate University Hospital and Rehabilitation Center (prev. University Hospital SUNY Health Science Center)",
+      "original": "B",
+      "pdf_rule": "F"
+    },
+    {
+      "id": "3301007-0628",
+      "name": "UPSTATE University Hospital at Community General",
+      "original": "B",
+      "pdf_rule": "F"
+    }
+  ],
+  "discrepancy_count": 17
+}
